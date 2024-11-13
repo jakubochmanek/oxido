@@ -1,0 +1,14 @@
+Przekształć poniższy artykuł na kod HTML, stosując się do poniższych zasad:
+
+1. **Struktura HTML**: Użyj odpowiednich tagów HTML do strukturyzacji treści. Rozdziel tekst na nagłówki (`<h1>`, `<h2>`, itd.) i akapity (`<p>`), zachowując logikę artykułu.
+
+2. **Grafiki**:
+   - Zidentyfikuj miejsca w tekście, gdzie można wstawić grafiki, i oznacz je tagiem `<img src="image_placeholder.jpg" alt="PROMPT DO WYGENEROWANIA GRAFIKI">`.
+   - W atrybucie `alt` zamieść dokładny opis, który może zostać użyty jako prompt do generowania obrazu.
+   - Każda grafika powinna mieć podpis. Użyj tagu `<figcaption>` dla podpisu, np. `<figcaption>Opis obrazka</figcaption>`.
+
+3. **Brak CSS i JavaScript**: Nie dołączaj żadnego kodu CSS ani JavaScript do wygenerowanego HTML. Skup się tylko na treści artykułu i jego strukturalnym formatowaniu w HTML.
+
+4. **Zakres generowania**: Wygenerowany kod HTML powinien zawierać tylko treść między tagami `<body>` i `</body>`. Nie dołączaj tagów `<html>`, `<head>` ani `<body>`.
+
+Poniżej znajduje się artykuł, który należy przekształcić w HTML:

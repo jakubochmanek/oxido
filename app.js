@@ -14,8 +14,23 @@ function readArticleFile(filePath) {
   }
 }
 
-// Wczytywanie treść artykułu z pliku
+// Funkcja do odczytu promptu z pliku
+function readPromptFile(filePath) {
+  try {
+    const prompt = fs.readFileSync(filePath, "utf-8");
+    console.log("Prompt wczytany poprawnie.");
+    return prompt;
+  } catch (error) {
+    console.error("Błąd przy odczycie pliku z promptem:", error);
+    return null;
+  }
+}
+
+// Wczytywanie treści artykułu z pliku
 const articleContent = readArticleFile("oxido-article.txt");
+
+// Wczytywanie treści promptu z pliku
+const prompt = readPromptFile("prompt.txt");
 
 // Funkcja do przetworzenia artykułu przez API OpenAI
 async function processArticleWithOpenAI(articleContent) {
@@ -30,8 +45,7 @@ async function processArticleWithOpenAI(articleContent) {
         messages: [
           {
             role: "system",
-            content:
-              'Przekształć poniższy tekst artykułu na kod HTML. Użyj odpowiednich tagów HTML do strukturyzacji treści, dodaj miejsca na grafiki z użyciem tagów <img src="image_placeholder.jpg"> i alt z dokładnym opisem grafiki, oraz umieść podpisy pod grafikami.',
+            content: prompt,
           },
           {
             role: "user",
