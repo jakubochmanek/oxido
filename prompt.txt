@@ -1,14 +1,19 @@
-Przekształć poniższy artykuł na kod HTML, stosując się do poniższych zasad:
+Twoim zadaniem jest przekształcenie poniższego artykułu w kod HTML zgodnie z poniższymi wytycznymi:
 
-1. **Struktura HTML**: Użyj odpowiednich tagów HTML do strukturyzacji treści. Rozdziel tekst na nagłówki (`<h1>`, `<h2>`, itd.) i akapity (`<p>`), zachowując logikę artykułu.
+1. **Struktura HTML**:
+   - Użyj odpowiednich tagów HTML, aby stworzyć przejrzystą strukturę artykułu. Podziel artykuł na nagłówki (`<h1>`, `<h2>`, itd.) i akapity (`<p>`), zachowując logiczną hierarchię.
+   - Dla każdego dużego rozdziału użyj `<h2>`, a dla podrozdziałów i mniej ważnych nagłówków zastosuj odpowiedni tag, np. `<h3>`, `<h4>`. Akapity tekstu powinny być oznaczone tagiem `<p>`.
 
-2. **Grafiki**:
-   - Zidentyfikuj miejsca w tekście, gdzie można wstawić grafiki, i oznacz je tagiem `<img src="image_placeholder.jpg" alt="PROMPT DO WYGENEROWANIA GRAFIKI">`.
-   - W atrybucie `alt` zamieść dokładny opis, który może zostać użyty jako prompt do generowania obrazu.
-   - Każda grafika powinna mieć podpis. Użyj tagu `<figcaption>` dla podpisu, np. `<figcaption>Opis obrazka</figcaption>`.
+2. **Obrazki**:
+   - Zidentyfikuj odpowiednie miejsca w tekście, gdzie należy dodać ilustracje. Dla każdego obrazu użyj tagu `<img src="image_placeholder.jpg" alt="PROMPT DO WYGNEROWANIA GRAFIKI">`, gdzie w atrybucie `alt` zawrzesz szczegółowy opis obrazu, który może być użyty jako prompt do generowania grafiki (np. "Ilustracja asystenta głosowego").
+   - Pod każdą grafiką umieść podpis, używając tagu `<figcaption>`. Na przykład: `<figcaption>Ilustracja asystenta głosowego</figcaption>`.
 
-3. **Brak CSS i JavaScript**: Nie dołączaj żadnego kodu CSS ani JavaScript do wygenerowanego HTML. Skup się tylko na treści artykułu i jego strukturalnym formatowaniu w HTML.
+3. **Brak CSS i JavaScript**:
+   - Wygenerowany kod HTML nie powinien zawierać żadnych tagów związanych z CSS ani JavaScript. Skup się tylko na strukturze artykułu w HTML, a cały kod powinien być umieszczony między tagami `<body>` i `</body>`.
+   - Nie dołączaj tagów `<html>`, `<head>`, ani `<body>`. Wygeneruj tylko kod, który ma być zawarty w obrębie tagów `<body>`.
 
-4. **Zakres generowania**: Wygenerowany kod HTML powinien zawierać tylko treść między tagami `<body>` i `</body>`. Nie dołączaj tagów `<html>`, `<head>` ani `<body>`.
+4. **Treść artykułu**:
+   - Przekształć poniższy artykuł zgodnie z powyższymi zasadami.
+   - Zapewnij, by artykuł miał sensowną strukturę i odpowiednio wstawione obrazy w odpowiednich miejscach, oraz podpisy pod obrazkami.
 
-Poniżej znajduje się artykuł, który należy przekształcić w HTML:
+Poniżej znajduje się artykuł do przekształcenia na kod HTML:
