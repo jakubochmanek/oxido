@@ -64,8 +64,6 @@ async function processArticleWithOpenAI(articleContent) {
     );
 
     const htmlContent = response.data.choices[0].message.content; // Zmiana odczytu odpowiedzi
-    console.log("Kod HTML wygenerowany przez OpenAI:");
-    console.log(htmlContent);
 
     return htmlContent;
   } catch (error) {
